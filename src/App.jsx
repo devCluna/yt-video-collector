@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
 
-      {/* <div onClick={()=>{
+      <div onClick={()=>{
         setToggleOverlay(!toggleOverlay)
         }} className={`overlay ${toggleOverlay && 'active'}`}>
           
@@ -69,7 +69,7 @@ function App() {
           />
         </div>
           
-      </div> */}
+      </div>
 
       <div className='head-wrapper'>
         <div className='left'>
