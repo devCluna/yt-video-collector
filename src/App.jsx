@@ -13,41 +13,41 @@ function App() {
   // const [tags, setTags] = useState([])
   // const [selectedVideo, setSelectedVideo] = useState({})
 
-  // const selectVideo = (video) => {
-  //   setSelectedVideo(video.videoId)
-  // }
+  const selectVideo = (video) => {
+    setSelectedVideo(video.videoId)
+  }
 
-  // const sliceVideoId = (urlString) => {
-  //   const slicedString = urlString.slice(32,43);
-  //   return slicedString
-  // }
+  const sliceVideoId = (urlString) => {
+    const slicedString = urlString.slice(32,43);
+    return slicedString
+  }
 
-  // const addVideoId = (videoId) => {
-  //   const videoSchema = {
-  //     ids: uniqid(),
-  //     videoId: videoId,
-  //     title: "",
-  //     tags:[]
-  //   }
+  const addVideoId = (videoId) => {
+    const videoSchema = {
+      ids: uniqid(),
+      videoId: videoId,
+      title: "",
+      tags:[]
+    }
 
-  //   setVideos([...videos, videoSchema])
-  // }
+    setVideos([...videos, videoSchema])
+  }
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   const videoId = sliceVideoId(currentSearch)
-  //   addVideoId(videoId)
-  // }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const videoId = sliceVideoId(currentSearch)
+    addVideoId(videoId)
+  }
 
-  // const handleChange =  (e) => {
-  //   setCurrentSearch(e.target.value)
-  // }
+  const handleChange =  (e) => {
+    setCurrentSearch(e.target.value)
+  }
 
-  // const deleteVideo = (target) => {
-  //   const {ids} = target
-  //   const filteredVideos = videos.filter((video) => video.ids !== ids)
-  //   setVideos(filteredVideos)
-  // }
+  const deleteVideo = (target) => {
+    const {ids} = target
+    const filteredVideos = videos.filter((video) => video.ids !== ids)
+    setVideos(filteredVideos)
+  }
 
 
   return (
