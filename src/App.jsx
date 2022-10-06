@@ -5,13 +5,13 @@ import uniqid from 'uniqid'
 import ReactPlayer from 'react-player'
 
 function App() {
-  // const [currentSearch, setCurrentSearch] = useState('')
-  // const [selectedVideo, setSelectedVideo] = useState('')
-  // const [videos, setVideos] = useState([])
-  // const [toggleOverlay, setToggleOverlay] = useState(false)
-  // const video = document.getElementById('yt')
-  // // const [tags, setTags] = useState([])
-  // // const [selectedVideo, setSelectedVideo] = useState({})
+  const [currentSearch, setCurrentSearch] = useState('')
+  const [selectedVideo, setSelectedVideo] = useState('')
+  const [videos, setVideos] = useState([])
+  const [toggleOverlay, setToggleOverlay] = useState(false)
+  const video = document.getElementById('yt')
+  // const [tags, setTags] = useState([])
+  // const [selectedVideo, setSelectedVideo] = useState({})
 
   // const selectVideo = (video) => {
   //   setSelectedVideo(video.videoId)
@@ -69,7 +69,7 @@ function App() {
           />
         </div>
           
-      </div>
+      </div> */}
 
       <div className='head-wrapper'>
         <div className='left'>
@@ -85,7 +85,7 @@ function App() {
         
       </div>
 
-      <div className='body-wrapper'>
+      {/* <div className='body-wrapper'>
 
         {videos?.map(video => (
           <div key={video.ids} className='element' >
