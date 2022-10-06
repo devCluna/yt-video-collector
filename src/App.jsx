@@ -36,6 +36,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const videoId = sliceVideoId(currentSearch)
+    setCurrentSearch('')
     addVideoId(videoId)
   }
 
